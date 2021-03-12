@@ -1,0 +1,21 @@
+<p>Type your order below:</p>
+
+<input type="text" [(ngModel)]="orderInputText" style="margin-bottom: 1%; width: 25%;"  id="orderInput" name="orderInput" maxlength="100"  />
+
+<div>
+    <input type="button"  id="BotaoConfirmar"  style="margin-bottom: 1%;"  value="Send Order" (click)="sendOrder()" />
+</div>
+
+<p>Your output is:</p>
+
+<input type="text" [(ngModel)]="orderOutputText" style="margin-bottom: 2%; width: 25%;"  id="orderOutputText" name="orderOutputText" maxlength="100" disabled />
+
+<p>Grid with order history:</p>
+
+<ag-grid-angular
+    style="width: 450px; height: 400px;"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+>
+</ag-grid-angular>
