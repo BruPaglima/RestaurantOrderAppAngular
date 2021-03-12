@@ -1,2 +1,6 @@
 <h1>Restaurant Order App</h1>
-<app-order-list></app-order-list>
+
+<app-order-input [(inputModel)]="initialInput" ></app-order-input>
+<app-order-button [(inputModel)]="initialInput" [(rowData)]="initialRowData" [(outputModel)]="initialOutput" ></app-order-button>
+<app-order-output-text [(outputModel)]="initialOutput" ></app-order-output-text>
+<app-order-grid [(rowData)]="initialRowData"></app-order-grid>

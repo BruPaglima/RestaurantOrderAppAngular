@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'RestaurantOrderAngular';
+  initialInput: string = '';
+  initialOutput: string = 'Output here';
+  initialRowData: { clientOrderInput: string; clientOrderOutput: string; }[] =
+   [
+    { clientOrderInput: 'Insert first order', clientOrderOutput: 'Insert first order' }
+  ];
 }
+
+
+
